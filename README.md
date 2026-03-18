@@ -1,4 +1,4 @@
-# Optimistic Orator - GenLayer Mini-Game
+# Optimistic Orator - GenLayer Mini-Game🍗
 
 A multiplayer debate mini-game for GenLayer's community that showcases **Intelligent Contracts** and **Optimistic Democracy** through natural language debate and AI consensus.
 
