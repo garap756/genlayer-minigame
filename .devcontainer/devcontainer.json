@@ -1,0 +1,15 @@
+{
+      "name": "GenLayer Mini Game - Node 22",
+        "image": "mcr.microsoft.com/devcontainers/javascript-node:22-bookworm",
+          "postCreateCommand": "pnpm install && npm install -g genlayer",
+            "customizations": {
+                "vscode": {
+                      "extensions": [
+                              "esbenp.prettier-vscode",
+                                      "dbaeumer.vscode-eslint",
+                                              "bradlc.vscode-tailwindcss"
+                                                    ]
+                                                        }
+                                                          }
+                                                          }
+}
