@@ -166,6 +166,29 @@ export default defineConfig({
   build: {
     outDir: path.resolve(import.meta.dirname, "dist/public"),
     emptyOutDir: true,
+    target: "esnext",
+    minify: "esbuild",
+    cssMinify: true,
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          vendor: ["react", "react-dom"],
+          ui: [
+            "@radix-ui/react-dialog",
+            "@radix-ui/react-tabs",
+            "@radix-ui/react-progress",
+            "@radix-ui/react-badge",
+          ],
+          charts: ["recharts"],
+          motion: ["framer-motion"],
+        },
+      },
+    },
+    chunkSizeWarningLimit: 1000,
+  },
+  optimizeDeps: {
+    include: ["react", "react-dom", "lucide-react", "axios"],
+    exclude: ["vite-plugin-manus-runtime"],
   },
   server: {
     port: 3000,
